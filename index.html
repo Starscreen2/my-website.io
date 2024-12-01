@@ -33,6 +33,40 @@
     <section id="resume">
         <h2>Resume</h2>
         <iframe src="PuyangHe.pdf" width="100%" height="129.4%"></iframe>
+    <div>
+        <label for="width-slider">Width:</label>
+        <input type="range" id="width-slider" min="50" max="100" value="100" oninput="updateSize()">
+        <span id="width-value">100% (0px)</span>
+    </div>
+    <div>
+        <label for="height-slider">Height:</label>
+        <input type="range" id="height-slider" min="50" max="100" value="100" oninput="updateSize()">
+        <span id="height-value">100% (0px)</span>
+    </div>
+    <script>
+        function updateSize() {
+            var iframe = document.querySelector('#resume iframe');
+            var widthSlider = document.getElementById('width-slider');
+            var heightSlider = document.getElementById('height-slider');
+            var widthValue = document.getElementById('width-value');
+            var heightValue = document.getElementById('height-value');
+
+            var widthPercent = widthSlider.value;
+            var heightPercent = heightSlider.value;
+
+            var parentWidth = iframe.parentElement.clientWidth;
+            var parentHeight = iframe.parentElement.clientHeight;
+
+            var widthPx = (parentWidth * widthPercent) / 100;
+            var heightPx = (parentHeight * heightPercent) / 100;
+
+            iframe.style.width = widthPercent + '%';
+            iframe.style.height = heightPercent + '%';
+
+            widthValue.textContent = widthPercent + '% (' + Math.round(widthPx) + 'px)';
+            heightValue.textContent = heightPercent + '% (' + Math.round(heightPx) + 'px)';
+        }
+    </script>
     </section>
     <footer>
         <p>&copy; 2023 My Portfolio</p>
