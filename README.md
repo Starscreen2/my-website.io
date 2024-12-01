@@ -20,6 +20,10 @@ You can view my resume [here](assets/resume.pdf).
     ```
 2. Open `index.html` in your web browser to view the website.
 
+## Website
+
+You can view the live website [here](https://your-username.github.io/my-website.io).
+
 ## Technologies Used
 
 - HTML
