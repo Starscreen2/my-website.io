@@ -2,23 +2,7 @@
 
 Welcome to my portfolio website! This site showcases my projects, skills, and contact information.
 
-## Sections
-
-- **About Me**: Learn more about my background and experience.
-- **Projects**: Explore the projects I have worked on.
-- **Contact**: Get in touch with me.
-
-## Resume
-
-You can view my resume [here](assets/resume.pdf).
-
-## How to Run
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/Starscreen2/my-website.io.git
-    ```
-2. Open `index.html` in your web browser to view the website.
+Open `index.html` in your web browser to view the website.
 
 ## Website
 
@@ -28,7 +12,6 @@ You can view the live website [here](https://Starscreen2.github.io/my-website.io
 
 - HTML
 - CSS
-- JavaScript (if applicable)
 
 ## License
 
