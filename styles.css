@@ -69,7 +69,7 @@ html, body {
 .resume-content {
     flex: 1;
     display: flex;
-    height: calc(100vh - 8rem); /* 8rem = header + footer */
+    height: calc(100vh - 100px);
 }
 
 .resume-content iframe {
