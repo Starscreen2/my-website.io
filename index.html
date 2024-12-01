@@ -40,7 +40,7 @@
     </div>
     <div>
         <label for="height-slider">Height:</label>
-        <input type="range" id="height-slider" min="50" max="100" value="100" oninput="updateSize()">
+        <input type="range" id="height-slider" min="50" max="1000" value="1000" oninput="updateSize()">
         <span id="height-value">100% (0px)</span>
     </div>
     <script>
@@ -59,10 +59,10 @@
 
             var widthPx = (parentWidth * widthPercent) / 100;
             var heightPx = (parentHeight * heightPercent) / 100;
-        
+
             iframe.style.width = widthPercent + '%';
-            iframe.style.height = heightPx + 'px';
-        
+            iframe.style.height = heightPercent + '%';
+
             widthValue.textContent = widthPercent + '% (' + Math.round(widthPx) + 'px)';
             heightValue.textContent = heightPercent + '% (' + Math.round(heightPx) + 'px)';
         }
