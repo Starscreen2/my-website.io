@@ -59,10 +59,10 @@
 
             var widthPx = (parentWidth * widthPercent) / 100;
             var heightPx = (parentHeight * heightPercent) / 100;
-
+        
             iframe.style.width = widthPercent + '%';
-            iframe.style.height = heightPercent + '%';
-
+            iframe.style.height = heightPx + 'px';
+        
             widthValue.textContent = widthPercent + '% (' + Math.round(widthPx) + 'px)';
             heightValue.textContent = heightPercent + '% (' + Math.round(heightPx) + 'px)';
         }
