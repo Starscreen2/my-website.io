@@ -63,6 +63,10 @@ html, body {
     flex-direction: column;
 }
 
+#resume h2 {
+    margin-bottom: 1rem;
+}
+
 .resume-content {
     flex: 1;
     display: flex;
